@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- crear un programa que pida la cantidad de dias y muestre años, semanas y dias desglosados: -->
+    <script>
+      var input = +prompt("Estimado, por favor ingresar la cantidad de días");
+      var years = Math.floor(input / 365);
+      var weeks = Math.floor((input - years * 365) / 7);
+      var days = Math.floor(input - years * 365 - weeks * 7);
+      alert(
+        `Los ${input} días corresponden a ${years} año(s), ${weeks} semana(s) y ${days} días`
+      );
+    </script>
+  </body>
+</html>

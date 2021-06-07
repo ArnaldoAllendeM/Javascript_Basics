@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperaturas</title>
+  </head>
+  <body>
+    <script>
+      var temperatura = +prompt(
+        `Ingrese la temperatura en grados Celcius (°C): `
+      );
+      var kelvin = temperatura + 273.15;
+      var fahrenheit = (temperatura * 9) / 5 + 32;
+      alert(
+        `la temperatura en grados Kelvin es: ${kelvin} y la temperatura en grados Fahrenheit es: ${fahrenheit}`
+      );
+    </script>
+  </body>
+</html>
